@@ -17,6 +17,7 @@ struct MainTabBarView: View {
             DashboardView()
                 .tabItem {
                     Image(TabItem.dashboard.icon)
+                        .renderingMode(.template)
                     Text(TabItem.dashboard.title)
                 }
                 .tag(TabItem.dashboard)
@@ -24,6 +25,7 @@ struct MainTabBarView: View {
             ProductView()
                 .tabItem {
                     Image(TabItem.product.icon)
+                        .renderingMode(.template)
                     Text(TabItem.product.title)
                 }
                 .tag(TabItem.product)
@@ -31,6 +33,7 @@ struct MainTabBarView: View {
             SellView()
                 .tabItem {
                     Image(TabItem.sell.icon)
+                        .renderingMode(.template)
                     Text(TabItem.sell.title)
                 }
                 .tag(TabItem.sell)
@@ -38,10 +41,11 @@ struct MainTabBarView: View {
             StockView()
                 .tabItem {
                     Image(TabItem.stock.icon)
+                        .renderingMode(.template)
                     Text(TabItem.stock.title)
                 }
                 .tag(TabItem.stock)
         }
-        .tint(AppColor.secondaryTextColor)
+        .tint(AppColor.primaryTextBlueColor)
     }
 }
