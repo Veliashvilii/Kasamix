@@ -9,7 +9,14 @@ import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-        Text("Dashboard View")
+        BaseView(
+            title: "Kasamix",
+            leftIcon: Image("app_icon")
+        ) {
+            VStack {
+                Text("Dashboard Content")
+            }
+        }
     }
 }
 

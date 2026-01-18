@@ -9,7 +9,14 @@ import SwiftUI
 
 struct StockView: View {
     var body: some View {
-        Text("Stock View")
+        BaseView(
+            title: "Kasamix",
+            leftIcon: Image("app_icon")
+        ) {
+            VStack {
+                Text("Stock Content")
+            }
+        }
     }
 }
 

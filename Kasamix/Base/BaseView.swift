@@ -40,10 +40,10 @@ struct BaseView<Content: View>: View {
             leftIcon
                 .resizable()
                 .scaledToFit()
-                .frame(width: 22, height: 22)
+                .frame(width: 36, height: 36)
 
             Text(title)
-                .font(.headline)
+                .font(AppFont.semiBold(24))
 
             Spacer()
 
